@@ -20,10 +20,11 @@ public class IAnonymousObjects {
 		//ABOVE /**/ code should be written 52 times..SO INSTEAD
 		frame.setVisible(true);
 		frame.setLayout(new FlowLayout());
-		frame.setSize(1000,1000);
+		frame.setSize(500,500);
+		frame.pack();
 		frame.setDefaultCloseOperation(3);
-		frame.setLocationRelativeTo(null);
-		for(int i=1;i<=4;i++) {
+	//	frame.setLocationRelativeTo(null);
+		for(int i=1;i<=52;i++) {
 	
 			deck.add(new JLabel(new ImageIcon("PlayingCards\\"+i+".png")));
 			frame.add(deck.get(i-1));
